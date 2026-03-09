@@ -1,12 +1,15 @@
 {
-  "name": "SIGEC — Gestão Comercial",
+  "name": "SIGEC — Sistema de Gestão Comercial",
   "short_name": "SIGEC",
-  "description": "Sistema Integrado de Gestão de Estoque e Caixa",
+  "description": "Sistema completo para gestão comercial: PDV, Estoque, Clientes e Financeiro",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0f",
   "theme_color": "#00d4ff",
   "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pt-BR",
+  "categories": ["business", "productivity", "finance"],
   "icons": [
     { "src": "/icons/icon-72.png",   "sizes": "72x72",   "type": "image/png" },
     { "src": "/icons/icon-96.png",   "sizes": "96x96",   "type": "image/png" },
@@ -19,13 +22,39 @@
   ],
   "shortcuts": [
     {
-      "name": "PDV",
+      "name": "Ponto de Venda",
       "short_name": "PDV",
-      "description": "Abrir Ponto de Venda",
+      "description": "Abrir caixa rapidamente",
       "url": "/?page=pdv",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Produtos",
+      "short_name": "Produtos",
+      "description": "Gerenciar produtos e estoque",
+      "url": "/?page=produtos",
+      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Clientes",
+      "short_name": "Clientes",
+      "description": "Gerenciar clientes",
+      "url": "/?page=clientes",
       "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
     }
   ],
-  "categories": ["business", "productivity"],
-  "lang": "pt-BR"
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
 }
